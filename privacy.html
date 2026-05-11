@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Privacy Policy — Boating Navigation</title>
+<meta name="description" content="Privacy policy for the Boating Navigation mobile app — offline-first marine GPS that never collects your data.">
+<style>
+  :root {
+    --ink: #0B2236;
+    --muted: #4A5A6B;
+    --accent: #CB2F2F;
+    --hairline: #E2E7EC;
+    --bg: #FFFFFF;
+    --code-bg: #F3F5F7;
+  }
+  * { box-sizing: border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 48px 24px 96px;
+    line-height: 1.6;
+    color: var(--ink);
+    background: var(--bg);
+  }
+  h1 {
+    color: var(--ink);
+    font-size: 28px;
+    letter-spacing: -0.01em;
+    margin: 0 0 8px;
+  }
+  h2 {
+    color: var(--ink);
+    font-size: 18px;
+    margin: 36px 0 12px;
+    padding-bottom: 6px;
+    border-bottom: 1px solid var(--hairline);
+  }
+  h3 {
+    color: var(--ink);
+    font-size: 15px;
+    margin: 24px 0 8px;
+  }
+  p, ul, ol { color: var(--ink); font-size: 15px; }
+  .meta { color: var(--muted); font-size: 13px; margin: 0 0 8px; }
+  .lede { color: var(--muted); font-size: 15px; font-style: italic; margin: 16px 0 24px; padding-left: 14px; border-left: 3px solid var(--accent); }
+  ul, ol { padding-left: 22px; }
+  li { margin: 4px 0; }
+  code { background: var(--code-bg); padding: 1px 6px; border-radius: 3px; font-size: 90%; }
+  table { width: 100%; border-collapse: collapse; margin: 14px 0; font-size: 14px; }
+  th, td { border: 1px solid var(--hairline); padding: 8px 10px; text-align: left; vertical-align: top; }
+  th { background: var(--code-bg); font-weight: 700; }
+  a { color: var(--accent); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  hr { border: none; border-top: 1px solid var(--hairline); margin: 36px 0; }
+  footer { color: var(--muted); font-size: 12px; margin-top: 48px; text-align: center; }
+</style>
+</head>
+<body>
+
+<h1>Privacy Policy — Boating Navigation</h1>
+<p class="meta"><strong>Last updated:</strong> 11 May 2026 · <strong>Effective:</strong> 11 May 2026</p>
+
+<p class="lede">The short version: we do not run a server, we do not collect your data, we do not create user accounts, and we do not track you across apps or websites. The app stores everything locally on your device.</p>
+
+<p>This Privacy Policy explains how the <strong>Boating Navigation</strong> mobile application ("the app", "we", "us") handles your information. Read it carefully before using the app.</p>
+
+<p>The only data that leaves your device are the minimum requests needed to fetch a map tile, a weather forecast, or a geocoding result, plus the ads SDK calls described below.</p>
+
+<h2>1. Information we do NOT collect</h2>
+
+<p>The app does not have a backend server. We never receive, see, store, or sell:</p>
+<ul>
+  <li>Your name, email, phone number, or any account information</li>
+  <li>Your GPS history, routes, trips, anchor positions, or vessel data</li>
+  <li>Your boat profile (vessel name, MMSI, length, type)</li>
+  <li>Your logbook entries</li>
+  <li>Your search history inside the app</li>
+  <li>Any analytics about how you use the app</li>
+</ul>
+<p>There are no user accounts. You do not sign up. You do not log in.</p>
+
+<h2>2. Information stored locally on your device</h2>
+
+<p>The following are stored <strong>only on your phone</strong>, in the app's private storage sandbox provided by iOS or Android:</p>
+<ul>
+  <li>Live GPS position (used to render the vessel cursor on the chart)</li>
+  <li>Course over ground (COG), speed over ground (SOG), heading</li>
+  <li>Saved routes and waypoints you create</li>
+  <li>Recorded passages / tracks</li>
+  <li>Anchor alarm position and radius</li>
+  <li>Man-Overboard (MOB) drop point and timestamp</li>
+  <li>Boat profile fields you enter (vessel name, MMSI, length, type)</li>
+  <li>App settings (units, map style, night mode, feature toggles)</li>
+  <li>Offline map regions you choose to download</li>
+  <li>Cached map tiles</li>
+  <li>Cached ad configuration</li>
+</ul>
+<p>Uninstalling the app deletes all of this data. We have no way to recover it.</p>
+
+<h2>3. Permissions the app requests, and why</h2>
+
+<table>
+  <tr><th>Permission</th><th>Why the app asks for it</th></tr>
+  <tr><td><strong>Location (When in Use)</strong></td><td>To show your vessel on the chart, compute course over ground (COG) and speed over ground (SOG), record passages, plan routes, and place a Man-Overboard drop point at the correct coordinates.</td></tr>
+  <tr><td><strong>Location (Always / Background)</strong></td><td>So tracking and the anchor alarm continue to work with the screen off during an overnight passage. The app shows a foreground service notification on Android whenever background location is active.</td></tr>
+  <tr><td><strong>Notifications</strong></td><td>So the anchor drag alert and the MOB banner can wake the helm even when the app is in the background.</td></tr>
+  <tr><td><strong>Vibration</strong></td><td>To deliver haptic feedback on alarms (anchor drag, MOB).</td></tr>
+  <tr><td><strong>Internet</strong></td><td>To download map tiles, weather forecasts, geocoding results, optional AIS ship data, ad config, and ads.</td></tr>
+</table>
+<p>You can revoke any of these permissions at any time from your device settings; the affected features will stop working but the app will not crash.</p>
+
+<h2>4. Data that leaves your device (third-party services)</h2>
+
+<p>The following requests are sent to third-party services. Each request contains only the minimum information needed to answer it.</p>
+
+<h3>4.1 Map tiles — OpenStreetMap &amp; OpenSeaMap</h3>
+<ul>
+  <li><strong>What is sent:</strong> Tile coordinates (z/x/y), a <code>User-Agent</code> string identifying the app version</li>
+  <li><strong>Sent to:</strong> <code>tile.openstreetmap.org</code>, <code>tiles.openseamap.org</code></li>
+  <li><strong>Why:</strong> To render the marine chart and the seamark overlay</li>
+  <li><strong>Their policies:</strong> <a href="https://wiki.osmfoundation.org/wiki/Privacy_Policy">OSM Foundation Privacy Policy</a></li>
+</ul>
+
+<h3>4.2 Weather — Open-Meteo</h3>
+<ul>
+  <li><strong>What is sent:</strong> Coordinates (latitude, longitude) of the area you want the forecast for</li>
+  <li><strong>Sent to:</strong> <code>api.open-meteo.com</code></li>
+  <li><strong>Why:</strong> To fetch the current weather and short-term forecast</li>
+  <li><strong>Their policy:</strong> <a href="https://open-meteo.com/en/terms">Open-Meteo Terms</a></li>
+</ul>
+
+<h3>4.3 Geocoding — Nominatim (OpenStreetMap)</h3>
+<ul>
+  <li><strong>What is sent:</strong> The text you type into the search bar, or coordinates for reverse geocoding, plus the <code>User-Agent</code> of the app</li>
+  <li><strong>Sent to:</strong> <code>nominatim.openstreetmap.org</code></li>
+  <li><strong>Why:</strong> To resolve harbour names, ports, or place names into coordinates</li>
+  <li><strong>Their policy:</strong> <a href="https://operations.osmfoundation.org/policies/nominatim/">Nominatim Usage Policy</a></li>
+</ul>
+
+<h3>4.4 Bathymetry — Open Topo Data</h3>
+<ul>
+  <li><strong>What is sent:</strong> Coordinates of the point you tap on the chart</li>
+  <li><strong>Sent to:</strong> <code>api.opentopodata.org</code></li>
+  <li><strong>Why:</strong> To return the seafloor depth at the tapped point</li>
+  <li><strong>Their site:</strong> <a href="https://www.opentopodata.org/">Open Topo Data</a></li>
+</ul>
+
+<h3>4.5 AIS ship tracking — AISStream.io <em>(optional, off by default)</em></h3>
+<p><strong>Only used when you enable AIS in Settings AND provide your own API key.</strong></p>
+<ul>
+  <li><strong>What is sent:</strong> Your API key, a bounding box of the chart area you are viewing</li>
+  <li><strong>Sent to:</strong> <code>stream.aisstream.io</code></li>
+  <li><strong>Why:</strong> To stream nearby commercial-ship positions in real time</li>
+  <li><strong>Their site:</strong> <a href="https://aisstream.io/">aisstream.io</a></li>
+</ul>
+
+<h3>4.6 Ads — Google AdMob</h3>
+<ul>
+  <li><strong>What is sent:</strong> Standard Google Mobile Ads SDK requests, which include your device's advertising identifier (ADID on Android, IDFA on iOS, only if you have not disabled it in OS settings), basic device information, and the ad unit identifier</li>
+  <li><strong>Sent to:</strong> Google AdMob servers</li>
+  <li><strong>Why:</strong> To serve banner, native, interstitial, and rewarded ads. We do not receive personal data about you from Google.</li>
+  <li><strong>Their policy:</strong> <a href="https://policies.google.com/technologies/ads">Google Ads Policy</a></li>
+  <li><strong>Frequency:</strong> Ads are gated by a frequency cap, are never shown during active tracking sessions, and are never shown on the live chart screen.</li>
+  <li><strong>Opt-out:</strong> Watching one rewarded ad grants a 24-hour ad-free window.</li>
+</ul>
+
+<h3>4.7 Ad configuration — GitHub Gist</h3>
+<ul>
+  <li><strong>What is sent:</strong> Standard HTTPS GET request, no personal data, no identifiers</li>
+  <li><strong>Sent to:</strong> <code>gist.githubusercontent.com</code></li>
+  <li><strong>Why:</strong> To fetch the latest ad unit identifiers and feature flags so we can disable a misbehaving ad placement without shipping a new app version</li>
+</ul>
+
+<h3>4.8 Feature flags — Firebase Remote Config</h3>
+<ul>
+  <li><strong>What is sent:</strong> Standard Firebase Remote Config SDK request (anonymous device install token, app version, locale)</li>
+  <li><strong>Sent to:</strong> Google Firebase</li>
+  <li><strong>Why:</strong> To toggle non-critical feature flags remotely</li>
+  <li><strong>Their policy:</strong> <a href="https://firebase.google.com/support/privacy">Firebase Privacy</a></li>
+</ul>
+
+<h2>5. SMS (Man-Overboard / distress)</h2>
+
+<p>When you trigger the MOB / SOS button, the app <strong>opens your phone's default SMS composer</strong> pre-filled with the coordinates of the drop point and a short distress message. The app does <strong>NOT</strong> send the SMS automatically — you must tap "Send" in your messaging app. The SMS is sent from your device, by your carrier, to the maritime authorities listed in the bundled <code>emergency_contacts.json</code>.</p>
+
+<p><strong>Important:</strong> This is NOT a satellite SOS service and is NOT a replacement for VHF Channel 16 or a registered EPIRB. It requires cellular coverage to work.</p>
+
+<h2>6. Sharing data with third parties</h2>
+
+<p>We do not sell, rent, or share your personal data because we do not collect it.</p>
+<p>You can manually share data with third parties through your own actions:</p>
+<ul>
+  <li><strong>GPX export</strong> — you can save a GPX file of a route or track and share it via any app you choose (e.g. AirDrop, email, WhatsApp). What you share is your choice.</li>
+  <li><strong>SMS composer</strong> — the MOB flow opens your SMS app pre-filled. You choose whether to send.</li>
+</ul>
+
+<h2>7. Children</h2>
+
+<p>The app is rated 4+ on the App Store and "Everyone" on Google Play. It does not knowingly collect data from any user. The app contains general-audience advertising via Google AdMob; per AdMob policy, no personalized ads are served to users tagged as children.</p>
+
+<h2>8. Security</h2>
+
+<p>Local data is stored in the app's private sandbox provided by iOS or Android. We do not transmit your personal data because we do not collect it. Map tiles, weather, geocoding, and ad requests are sent over HTTPS / WSS.</p>
+
+<h2>9. International users</h2>
+
+<p>The app is available worldwide. Because we do not run servers and do not collect personal data, the GDPR (EU), CCPA (California), and similar regulations apply only to data collection by the third parties listed in section 4. Refer to each third party's policy for their compliance posture.</p>
+
+<h2>10. Changes to this policy</h2>
+
+<p>If we change this Privacy Policy, the "Last updated" date at the top will change and the new version will be published at the same URL the app links to. Material changes will be highlighted at the top of this document.</p>
+
+<h2>11. Contact</h2>
+
+<p>For privacy questions about this app, contact:</p>
+<p><strong>Email:</strong> <a href="mailto:support@boatingnav.app">support@boatingnav.app</a></p>
+
+<hr>
+
+<footer>© 2026 Boating Navigation</footer>
+
+</body>
+</html>
