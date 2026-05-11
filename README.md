@@ -20,3 +20,4 @@ To update the policy:
 GitHub Pages republishes within ~1 minute. No app store update required —
 the app fetches the page live whenever the user opens the link.
 
+
